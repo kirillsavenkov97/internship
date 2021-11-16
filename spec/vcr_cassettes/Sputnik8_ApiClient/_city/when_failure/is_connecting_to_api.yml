@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sputnik8.com/v1/cities/1?api_key=<API_KEY>&username=<USERNAME>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.7.1
+  response:
+    status:
+      code: 500
+      message: Error
+    headers:
+      date:
+      - Thu, 09 Sep 2021 11:07:29 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      vary:
+      - Accept-Encoding, Accept-Encoding
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      x-download-options:
+      - noopen
+      x-permitted-cross-domain-policies:
+      - none
+      referrer-policy:
+      - no-referrer-when-downgrade
+      etag:
+      - W/"15f6e8bf45349f5cce7c066b9730e550"
+      cache-control:
+      - max-age=0, private, must-revalidate
+      set-cookie:
+      - ahoy_visitor=46ad930e-a40a-47cf-b205-48893706cb3b; domain=.sputnik8.com; path=/;
+        expires=Sat, 09 Sep 2023 11:07:29 GMT, ahoy_visit=52833cb5-4c28-4055-a7ee-9ce1b2a1288a;
+        domain=.sputnik8.com; path=/; expires=Thu, 09 Sep 2021 15:07:29 GMT, _sptnik_server_session=RkxwRXlvbHBtNm9JNTdEc2dSZ1FERVJIL3JHbFlnRnNGSUQrYm9Ld2MyNjJlNGViZmJ1dFdlWk9xK3VvOS9SOU9KYmcxdmtzYzVHL1NyUUN4WmpzcG5VOFV2ci83Z0Z1MzFPb2xIWk53K3pIS2U2RVhGL3FzenlmUXpIM3FDYnhmaTQvWEFudmVtT3JFNjdHWlZDbFlBPT0tLTFvZ1Q5d08zMG5zT3hUVXIyUmRkL2c9PQ%3D%3D--49237328bbbad792caf2f73965a9d9c5fd225254;
+        path=/; HttpOnly
+      x-request-id:
+      - 8247cada-4ea3-4336-bec5-bf112857118c
+      x-runtime:
+      - '0.163456'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6MSwidXJsIjoiaHR0cHM6Ly93d3cuc3B1dG5pazguY29tL3J1L3N0LXBldGVyc2J1cmc/cmVmPTQyNDEiLCJzbHVnIjoic3QtcGV0ZXJzYnVyZyIsIm5hbWUiOiLQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsyIsIm5hbWVfaW5fY2FzZSI6ItCyINCh0LDQvdC60YIt0J/QtdGC0LXRgNCx0YPRgNCz0LUiLCJwcm9kdWN0cyI6MjMyNSwicHJvdmlkZXJzIjoxMjkzLCJjb29yZGluYXRlcyI6eyJsYXQiOm51bGwsImxuZyI6bnVsbH0sImdlbyI6eyJjb3VudHJ5Ijp7ImlkIjoxLCJuYW1lIjoi0KDQvtGB0YHQuNGPIn0sInJlZ2lvbiI6eyJpZCI6MSwibmFtZSI6ItCh0LDQvdC60YIt0J/QtdGC0LXRgNCx0YPRgNCzIn0sImRlc2NyaXB0aW9uIjp7ImltYWdlIjoiaHR0cHM6Ly83ZDllODhhOC1mMTc4LTQwOTgtYmVhNS00OGQ5NjA5MjA2MDUuc2VsY2RuLm5ldC9kNzhmNTI4Ni1lNzYzLTRhOTUtOWNlZS1iN2M0M2MzNmJlZGMvIiwibm90ZSI6bnVsbCwidGV4dCI6IuKtkCAle2NpdHlfYWN0aXZpdGllc19jb3VudF90ZXh0fSDQv9C+INCf0LXRgtC10YDQsdGD0YDQs9GDINC+0YIg0YfQsNGB0YLQvdGL0YUg0LPQuNC00L7QsiDQuCDQvtGE0LjRhtC40LDQu9GM0L3Ri9GFINGC0YPRgNC+0L/QtdGA0LDRgtC+0YDQvtCyOiDQuNC90LTQuNCy0LjQtNGD0LDQu9GM0L3Ri9C1INC4INCz0YDRg9C/0L/QvtCy0YvQtSwg0LDQstGC0L7QsdGD0YHQvdGL0LUg0YLRg9GA0Ysg0Lgg0L/QtdGI0LXRhdC+0LTQvdGL0LUg0L/RgNC+0LPRg9C70LrQuC4g0KbQtdC90Ysg0L3QsCDRjdC60YHQutGD0YDRgdC40Lgg0LIg0KHQn9CxINC+0YIgJXtjaXR5X21pbl9jb3N0fSFcclxuIn19fQ==
+  recorded_at: Thu, 09 Sep 2021 11:07:29 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="containter-fluid">
+    <div class="col">
+      <div class="card">
+        <img src=<%= @presenter.activity.photo %> class="card-img-top activity-image" alt="...">
+        <h5 class="card-title"><%= @presenter.activity.title %>
+        <div class="card-body">
+        <p class="card-text"><%= @presenter.activity.price %> <%= @presenter.activity.currency %></p>
+        <p class="card-text"><%= @presenter.activity.description %> </p>
+      </div>
+    </div>
+  </div>
+</div>

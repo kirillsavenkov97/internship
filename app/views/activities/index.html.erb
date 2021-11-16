@@ -1,0 +1,27 @@
+<div class="container">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <%= form_tag({}, {:method => :get}) do %>
+        <%= select_tag :city_id, options_from_collection_for_select(@presenter.cities_list, 'id', 'name', :selected => params[:city_id]), prompt: "Город", class: "form-control" %>
+        <%= select_tag :order, options_for_select({ "#{ I18n.t 'price_desc' }": "price_desc", "#{ I18n.t 'price_asc' }": "price_asc", "#{ I18n.t 'weight' }": "weight" }, :selected => params[:order]), prompt: "Сортировать по: ", class: "form-control" %>
+        <%= submit_tag "Submit", class: "form-control" %>
+      <% end %>
+    </li>
+  </ul>
+</div>
+<div class="row">
+  <%= will_paginate @presenter.activities, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+  <% @presenter.activities.each do |activity| %>
+    <% cache(activity) do %>
+      <div class="col">
+        <div class="card activity-card">
+          <div class="container-md"> <img src=<%= activity.photo %> class="card-img-top card-img-top-activity" alt="..."> </div>
+          <div class="card-body">
+          <h5 class="card-title"><%=link_to  activity.title, activity_path(id: activity.id) %>
+          <p class="card-text"><%= activity.price %> <%= activity.currency %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

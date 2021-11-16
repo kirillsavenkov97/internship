@@ -1,0 +1,16 @@
+<div class="row">
+  <%= will_paginate @presenter.activities_in_city, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+  <% @presenter.activities_in_city.each do |activity| %>
+    <% cache(activity) do %>
+      <div class="col">
+        <div class="cities-card">
+          <img src=<%= activity.photo %> class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title"><%= activity.title %>
+          <p class="card-text"><%= activity.price %> <%= activity.currency %></p>
+           </div>
+         </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

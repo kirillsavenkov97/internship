@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kirillsavenkov97</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="d-flex justify-content-center py-3">
+        <a href="/activities"> <img src="https://dcf0cc24-b4f8-4213-8ee9-46f32e416483.selcdn.net/assets/affiliate/600x90-23aaf7186c3cf24aae43d1152c086cd1401150bbf0e1fb44987df1bd8d3b4c7f.jpg"> </a>
+      </header>
+    </div>
+    <%= yield %>
+  </body>
+</html>

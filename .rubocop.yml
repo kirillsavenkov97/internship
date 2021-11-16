@@ -1,0 +1,64 @@
+require:
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-performance
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7
+
+Metrics/AbcSize:
+  Exclude:
+    - db/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+    - config/**/*
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - bin/bundle
+
+Metrics/MethodLength:
+  Exclude:
+    - bin/bundle
+    - db/**/*
+
+Metrics/ParameterLists:
+  Max: 8
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - bin/bundle
+
+Rails/Present:
+  Exclude:
+    - bin/bundle
+
+Rails/FilePath:
+  EnforcedStyle: arguments
+
+RSpec/MessageSpies:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - config/**/*
+    - db/**/*
+    - config.ru
+    - Gemfile
+    - Rakefile
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
